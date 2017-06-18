@@ -25,8 +25,20 @@ public class Repository {
 
         return res;
     }
+    public boolean isSummed(){
+        if(list.size()==1){
+            return true;
+        }
+        return false;
+    }
 
     public synchronized void enterSum(int num) {
         list.add(num);
+    }
+    public  int getFirst(){
+        return list.get(0);
+    }
+    public int size(){
+        return list.size();
     }
 }
