@@ -6,7 +6,7 @@ public class Repository {
     private ArrayList<Integer> list;
 
     public Repository(int[] array) {
-        list = new ArrayList<Integer>();
+        list = new ArrayList<>();
         for (int num:array
              ) {
             list.add(num);
